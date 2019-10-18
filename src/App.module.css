@@ -1,0 +1,99 @@
+.app {
+  width: 50%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* .pagination_container {
+  background: yellow;
+} */
+.pagination {
+  margin-top: 15px;
+  /* margin-bottom: 10px; */
+}
+.paginationSpan {
+  cursor: pointer;
+  color: black;
+  float: left;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+
+  border: 1px solid #ddd;
+  background: orange;
+}
+.paginationSpan:hover {
+  background-color: grey;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* background: orange; */
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 1rem 1rem;
+  min-width: 80%;
+  word-wrap: break-word;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* .hide {
+  visibility: hidden;
+} */
+.logo {
+  vertical-align: top;
+  width: 60%;
+  height: 60%;
+
+  margin-top: 15px;
+  /* float: left; */
+  margin-left: -15rem;
+
+  /* display: inline-block; height: 30px; margin-top: -5px; */
+}
+
+.company_title {
+  display: inline-block;
+  vertical-align: top;
+  /* margin-right: 20px; */
+  height: 60%; /* if you want it to take the full height of the bar */
+  line-height: 80px; /* if you want it vertically middle of the navbar */
+  font-weight: 500;
+  font-size: 42px;
+  margin-right: 21rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.navigation_bar {
+  width: 100%; /* i'm assuming full width */
+  height: 80px; /* change it to desired width */
+  background-color: orange; /* change to desired color */
+}

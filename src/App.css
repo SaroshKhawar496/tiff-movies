@@ -20,3 +20,19 @@
 .App-link {
   color: #09d3ac;
 }
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 42px;
+}
+
+span,
+p {
+  font-weight: 400;
+  font-size: 19px;
+}
+
