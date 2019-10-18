@@ -64,6 +64,7 @@ class MoviesList extends Component {
     }
 
     if (filteredMovies) {
+      console.log(filteredMovies);
       movies = filteredMovies.map(movie => {
         return (
           <div key={movie.id} className={styles.cards}>
@@ -75,7 +76,11 @@ class MoviesList extends Component {
 
     return (
       <div className={styles.app}>
-        {movies}
+        {movies && movies.length !== 0 ? (
+          movies
+        ) : (
+          <p>No Movies To Show. Each have popularity less than 10</p>
+        )}
         <div className={styles.pagination}>{pages}</div>
       </div>
     );
