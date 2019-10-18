@@ -6,7 +6,6 @@ class MoviesList extends Component {
   state = {
     movies: null,
     total_results: null,
-    // per_page: null,
     current_page: 1,
     total_pages: null
   };
@@ -25,16 +24,12 @@ class MoviesList extends Component {
 
     const data = await response.json();
 
-    // const per_page = Math.ceil(data.total_results / data.total_pages);
-
     this.setState({
       movies: data.results,
       total_results: data.total_results,
-      //   per_page: per_page,
       current_page: data.page,
       total_pages: data.total_pages
     });
-    // console.log(this.state);
   };
 
   componentDidMount() {
